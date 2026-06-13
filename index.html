@@ -120,12 +120,11 @@
   @media (max-width: 900px) { .carousel-track img { height: 190px; } }
 
   /* Results */
-  .results { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 920px; margin: 0 auto; }
+  .results { display: flex; flex-direction: column; gap: 32px; max-width: 760px; margin: 0 auto; }
   .results img {
     width: 100%; height: auto; border-radius: var(--radius); display: block;
     border: 1px solid var(--gray-800); box-shadow: 0 18px 50px -28px rgba(120,90,20,.30);
   }
-  @media (max-width: 700px) { .results { grid-template-columns: 1fr; } }
 
   /* Immersion info band */
   .info { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
