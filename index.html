@@ -129,21 +129,18 @@
   .stars{color:var(--gold);font-size:.8rem;letter-spacing:.2em;font-style:normal;display:block;margin-bottom:8px;}
 
   /* casos empilhados com texto ao lado */
-  .casos{display:grid;grid-template-columns:.72fr 1.28fr;gap:46px;align-items:start;margin-top:40px;}
-  .casos-fotos{display:grid;gap:16px;max-width:340px;}
+  .casos{margin-top:40px;}
+  .casos-fotos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
   .casos-fotos figure{border:1px solid var(--line);background:#000;padding:8px;position:relative;}
   .casos-fotos img{width:100%;height:auto;display:block;}
   .casos-fotos figcaption{position:absolute;top:16px;left:16px;background:rgba(12,10,9,.78);
     color:var(--gold);font-family:-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
     font-size:.64rem;letter-spacing:.18em;font-weight:700;padding:5px 10px;}
-  .casos-fixo{position:sticky;top:96px;}
+  .casos-texto{max-width:660px;margin:44px auto 0;}
   .casos-texto h3{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;color:#fff;letter-spacing:-.03em;line-height:1.1;}
   .casos-texto .quote{font-size:1.12rem;margin-left:0;}
-  @media (max-width:900px){
-    .casos{grid-template-columns:1fr;gap:30px;}
-    .casos-fotos{max-width:340px;margin:0 auto;}
-    .casos-texto{order:-1;}
-    .casos-fixo{position:static;}
+  @media (max-width:640px){
+    .casos-fotos{grid-template-columns:1fr;max-width:340px;margin:0 auto;}
   }
 
   /* antes e depois */
